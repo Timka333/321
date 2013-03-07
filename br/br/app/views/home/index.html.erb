@@ -1,0 +1,16 @@
+<h2>
+  Personal Finance App
+</h2>
+
+<p>Welcome to BudgetRhino!<br /> <br />
+We are currently in Alpha.<br /> <br />
+Sign up for a free account and tell me what you think! :)
+
+  <%- if user_signed_in? %>
+    <hr />
+    <%= link_to 'Start your budget!', root_url+"budget/step1" %>
+  <%- end %>
+
+</p>
+
+<%= render :partial => "modals" %>

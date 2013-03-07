@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+* {font-family: "Helvetica", Georgia, Times, serif;}
+.t_r {text-align:right;}
+.clear{clear:both;}
+
+#content {margin-top:25px;border:1px solid #CCC;padding-top:20px;padding:20px;}
+
+p {font-weight:700;}
+
+h1
+{
+    font-size:36px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #444444;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    margin:0;
+    padding:0;
+}
+h2{
+    font-size:26px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #444444;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    margin:0;
+    padding:0;
+}
+button {border-radius: 15px;padding:4px 11px;background-color:#CCC;}
+button a {text-decoration:none;color:#000;font-weight:bold;}
+
+
+
+/* Budget flow CSS */
+
+
+.amount {font-weight:normal;letter-spacing: .5px;}
+.budget_header {margin-bottom:25px;}
+.next {border-radius: 15px;padding:4px 11px;background-color:#3399FF;color:#FFF;}
+fieldset {float:left;width:150px;margin:0 18px 0 0;border:none;}
+fieldset input {width:140px;padding:4px;border-radius: 3px;font-size:20px;letter-spacing: 1px;font-weight:600;}
+
+
+
+
