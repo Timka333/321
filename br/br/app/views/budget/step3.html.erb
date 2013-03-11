@@ -1,2 +1,24 @@
-<h1>Budget#step3</h1>
-<p>Find me in app/views/budget/step3.html.erb</p>
+<%= form_for(:budget, :url => {:action => 'create3'}) do |f| %>
+
+    <h2 class="budget_header">Budget flow : Step 3 of 8 ( Well being ) </h2>
+    <fieldset>
+      <%= f.label "Food" %><br />      
+      <%#= f.text_field :name1, :value => "Rent" %><br />
+      <%= f.text_field :amount1, :autofocus => true, :class => "amount" %>
+    </fieldset>
+
+    <fieldset>
+      <%= f.label "Clothing" %><br />
+      <%#= f.text_field :name2, :value => "Utilities" %><br />
+      <%= f.text_field :amount2, :class => "amount" %>
+    </fieldset>
+    
+    <fieldset>
+      <%= f.label "Medical" %><br />
+      <%#= f.text_field :name2, :value => "Utilities" %><br />
+      <%= f.text_field :amount3, :class => "amount" %>
+    </fieldset>
+            
+    <div class="clear"></div>
+    <div style="text-align:right;"><%= f.submit "Next >>", :class => "next" %></div>
+<% end %>

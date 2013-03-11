@@ -8,6 +8,17 @@ Br::Application.routes.draw do
   get "budget/step7"
   get "budget/step8"
   resources :budget
+  
+  post "budget/create1"
+  post "budget/create2"
+  post "budget/create3"
+  post "budget/create4"
+  post "budget/create5"
+  post "budget/create6"
+  post "budget/create7"
+  post "budget/create8"
+  
+  
   devise_for :users
 
   get "home/index"

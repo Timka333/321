@@ -1,2 +1,30 @@
-<h1>Budget#step2</h1>
-<p>Find me in app/views/budget/step2.html.erb</p>
+<%= form_for(:budget, :url => {:action => 'create2'}) do |f| %>
+
+    <h2 class="budget_header">Budget flow : Step 2 of 8 ( Car ) </h2>
+    <fieldset>
+      <%= f.label "Car Payment" %><br />      
+      <%#= f.text_field :name1, :value => "Rent" %><br />
+      <%= f.text_field :amount1, :autofocus => true, :class => "amount" %>
+    </fieldset>
+
+    <fieldset>
+      <%= f.label "Car Gas" %><br />
+      <%#= f.text_field :name2, :value => "Utilities" %><br />
+      <%= f.text_field :amount2, :class => "amount" %>
+    </fieldset>
+    
+    <fieldset>
+      <%= f.label "Car Insurance" %><br />
+      <%#= f.text_field :name2, :value => "Utilities" %><br />
+      <%= f.text_field :amount3, :class => "amount" %>
+    </fieldset>
+    
+    <fieldset>
+      <%= f.label "Car Maintenance" %><br />
+      <%#= f.text_field :name2, :value => "Utilities" %><br />
+      <%= f.text_field :amount4, :class => "amount" %>
+    </fieldset>
+            
+    <div class="clear"></div>
+    <div style="text-align:right;"><%= f.submit "Next >>", :class => "next" %></div>
+<% end %>
