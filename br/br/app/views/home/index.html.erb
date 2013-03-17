@@ -8,7 +8,12 @@ Sign up for a free account and tell me what you think! :)
 
   <%- if user_signed_in? %>
     <hr />
-    <%= link_to 'Start your budget!', root_url+"budget/step1" %>
+     <% if @has_bill.nil? %>
+        <%= link_to 'Start your budget!', root_url+"budget/step1" %>
+     <% else %>
+        <%= link_to 'My Account', root_url+"budget/overview" %>
+     <% end %>
+
   <%- end %>
 
 </p>

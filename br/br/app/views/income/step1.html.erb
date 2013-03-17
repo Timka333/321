@@ -1,0 +1,10 @@
+<%= form_for(:income, :url => {:action => 'create1'}) do |f| %>
+
+    <h2 class="budget_header">Income flow : Step 1 of 2 ( Income )</h2>
+    <fieldset>
+      <%= f.label "Bi-weekly income (after taxes)" %><br />
+      <%= f.text_field :income, :autofocus => true, :class => "amount" %>
+    </fieldset>
+    <div class="clear"></div>
+    <div style="text-align:right;"><%= f.submit "Next >>", :class => "next" %></div>
+<% end %>

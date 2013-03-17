@@ -1,23 +1,24 @@
 Br::Application.routes.draw do
+  get "income/step1"
+  get "income/step2"
+  post "income/create1"
+  post "income/create2"
+
   get "budget/step1"
   get "budget/step2"
   get "budget/step3"
   get "budget/step4"
   get "budget/step5"
-  get "budget/step6"
-  get "budget/step7"
-  get "budget/step8"
-  resources :budget
+  get "budget/overview"
   
   post "budget/create1"
   post "budget/create2"
   post "budget/create3"
   post "budget/create4"
   post "budget/create5"
-  post "budget/create6"
-  post "budget/create7"
-  post "budget/create8"
-  
+  post "budget/overview"
+  post "budget/create_single_bill"
+  post "budget/delete_bill"
   
   devise_for :users
 

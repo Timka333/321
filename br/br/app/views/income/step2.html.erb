@@ -1,0 +1,14 @@
+<%= form_for(:income, :url => {:action => 'create2'}) do |f| %>
+
+    <h2 class="budget_header">Income flow : Step 2 of 2 ( Assets & Liabilities )</h2>
+    <fieldset>
+      <%= f.label "Total Debt" %><br />
+      <%= f.text_field :debt, :autofocus => true, :class => "amount" %>
+    </fieldset>
+    <fieldset>
+      <%= f.label "Total Savings" %><br />
+      <%= f.text_field :savings, :class => "amount" %>
+    </fieldset>
+    <div class="clear"></div>
+    <div style="text-align:right;"><%= f.submit "Next >>", :class => "next" %></div>
+<% end %>

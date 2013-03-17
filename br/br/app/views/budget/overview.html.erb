@@ -1,0 +1,38 @@
+<%= render :partial => "javascript" %>
+<div class="cp_item_left">
+  <h3>Monthly Budget:</h3>
+  <%- i = 1 %>
+  <%- @whole_budget.each do |b| -%>
+    <p class="bills" onmouseover="show_actions('edit<%= i %>', 'destroy<%= i %>');this.style.cursor='pointer';this.style.backgroundColor='#CCC';"
+       onmouseout="hide_actions('edit<%= i %>', 'destroy<%= i %>');this.style.backgroundColor='#FFF'">
+      <%= b.bill_name %> : <span>
+      <a id="edit<%= i %>" href="javascript:void(0);">edit</a>
+      <a id="destroy<%= i %>" href="javascript:void(0);" data-reveal-id="delete_bill" onclick="pass_id(<%= b.id %>);">delete</a>
+      </i> $ <%= b.bill_amount %></span></p>
+    <%- i +=1 %>
+  <%- end %>
+  <button id="button">
+    <a href="javascript:void(0);" data-reveal-id="add_bill">
+      Add Bill
+    </a></button>
+   <hr />
+   <p class="bills">Total Monthly Expense:<span>$ <%= @total_monthly_overhead %> </span></p>
+</div>
+<div class="cp_item_right">
+
+  <h3>Income:</h3>
+  <div class="clear"></div>
+
+  <% if @income.nil? %>
+      <%= link_to 'Enter your income', root_url+"income/step1" %>
+  <% else %>
+
+      <p>Monthly Income : <%= @income.income*2  %></p>
+      <p>Total Debt : <%= @income.debt  %></p>
+      <p>Total Savings : <%= @income.savings  %></p>
+      <p>Cash Worth : <%= @income.savings - @income.debt %></p>
+      <p>You're saving $<%= @income.income*2 - @total_monthly_overhead %> a month!</p>
+
+  <% end %>
+</div>
+

@@ -1,8 +1,8 @@
 <%= form_for(:budget, :url => {:action => 'create5'}) do |f| %>
 
-    <h2 class="budget_header">Budget flow : Step 5 of 8 ( Total ) </h2>
-    <fieldset>
-      <%= f.label "Total Debt" %><br />      
+    <h2 class="budget_header">Budget flow : Step 5 of 5 ( Total ) </h2>
+    <!--    <fieldset>
+      <%= f.label "Total Debt" %><br />
       <%#= f.text_field :name1, :value => "Rent" %><br />
       <%= f.text_field :amount1, :autofocus => true, :class => "amount debt" %>
     </fieldset>
@@ -17,7 +17,7 @@
       <%= f.label "Cash Worth" %><br />
       <%#= f.text_field :name2, :value => "Utilities" %><br />
       <%= f.text_field :amount3, :class => "amount total" %>
-    </fieldset>
+    </fieldset>-->
             
     <div class="clear"></div>
     <div style="text-align:right;"><%= f.submit "Next >>", :class => "next" %></div>

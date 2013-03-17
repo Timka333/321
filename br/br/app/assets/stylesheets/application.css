@@ -15,8 +15,7 @@
 .t_r {text-align:right;}
 .clear{clear:both;}
 
-#content {margin-top:25px;border:1px solid #CCC;padding-top:20px;padding:20px;}
-
+#content {margin-top:25px;padding-top:20px;padding:20px;}
 p {font-weight:700;}
 
 h1
@@ -57,6 +56,23 @@ button a {text-decoration:none;color:#000;font-weight:bold;}
 .next {border-radius: 15px;padding:4px 11px;background-color:#3399FF;color:#FFF;}
 fieldset {float:left;width:150px;margin:0 18px 0 0;border:none;}
 fieldset input {width:140px;padding:4px;border-radius: 3px;font-size:20px;letter-spacing: 1px;font-weight:600;}
+
+/* Add single Bill Modal */
+#add_bill fieldset {float:left;width:250px;margin:0 18px 0 0;border:none;}
+#add_bill fieldset input {width:240px;padding:4px;border-radius: 3px;font-size:20px;letter-spacing: 1px;font-weight:600;}
+
+/* Edit single Bill Modal */
+.bills a {display:none;}
+
+/* User Control Panel */
+p.bills {width:400px;margin:0;padding:4px 15px;}
+p.bills span {display:inline-block;float:right;}
+
+.cp_item_left {padding:11px;border:1px solid #CCC;border-radius:11px;width:425px;float:left;}
+.cp_item_left h3 {position: relative;top: -23px;background-color: #fff;width: auto;display: inline;padding: 0 8px;}
+
+.cp_item_right {padding:11px;border:1px solid #CCC;border-radius:11px;width: 200px;margin: 0 8px;float:left;}
+.cp_item_right h3 {position: relative;top: -23px;background-color: #fff;width: auto;display: inline;padding: 0 8px;}
 
 
 
