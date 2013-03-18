@@ -14,7 +14,7 @@
     <file path="/application.css" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363509357911" ignored="false" />
     <file path="/index.html.erb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363325730448" ignored="false" />
     <file path="/application_controller.rb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363330195837" ignored="false" />
-    <file path="/20130307043504_create_budgets.rb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1362631550138" ignored="false" />
+    <file path="/20130307043504_create_budgets.rb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363587386051" ignored="false" />
     <file path="/budget.rb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1362631602974" ignored="false" />
     <file path="/step1.html.erb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363329305702" ignored="false" />
     <file path="/budget_controller.rb" changelist="df6f9594-057d-4086-9133-dd4b5ad7ada9" time="1363510366563" ignored="false" />
@@ -92,16 +92,16 @@
       <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="57" selection-end="79" vertical-scroll-proportion="0.0">
+            <state line="6" column="48" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130306034251_devise_create_users.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130306034251_devise_create_users.rb">
+      <file leaf-file-name="20130307043504_create_budgets.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130307043504_create_budgets.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="7" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.15677492">
               <folding />
             </state>
           </provider>
@@ -135,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/budget/step5.html.erb" />
         <option value="$PROJECT_DIR$/app/views/budget/step4.html.erb" />
         <option value="$PROJECT_DIR$/app/models/income.rb" />
         <option value="$PROJECT_DIR$/app/views/income/step1.html.erb" />
@@ -151,6 +150,7 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130307043504_create_budgets.rb" />
       </list>
     </option>
   </component>
@@ -749,11 +749,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/income/step2.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="106" selection-start="452" selection-end="452" vertical-scroll-proportion="-7.586207" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/income_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="110" selection-start="485" selection-end="485" vertical-scroll-proportion="0.44792834" />
@@ -844,16 +839,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130306034251_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="57" selection-end="79" vertical-scroll-proportion="0.0">
+        <state line="15" column="55" selection-start="492" selection-end="492" vertical-scroll-proportion="0.3440367">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130306034251_devise_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6" column="48" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130307043504_create_budgets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.15677492">
           <folding />
         </state>
       </provider>

@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130315060752) do
 
   create_table "budgets", :force => true do |t|
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "bill_name"
     t.integer  "bill_amount"
     t.datetime "created_at",  :null => false
